@@ -1,0 +1,17 @@
+﻿<Window x:Class="WorkLab.View.MessageView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorkLab.View"
+        mc:Ignorable="d"
+        Title="MessageView" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Button Content="OK" Grid.Row="1" Name="Ok_btn" Click="Ok_btn_Click" HorizontalAlignment="Center" Width="70"/>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Name="MessageBox"/>
+    </Grid>
+</Window>
